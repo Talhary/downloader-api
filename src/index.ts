@@ -10,7 +10,7 @@ import { deleteFilesDaily } from "./lib/delets.js";
 dotenv.config();
 
 
-const port = 5000|| process.env.PORT;
+const port = process.env.PORT || 5000;
 app.use(express.json())
 app.get('/',(req,res)=>res.send('lol'))
 app.use('/api/v1/yt',Ytroute)
